@@ -1,0 +1,929 @@
+@font-face {
+    font-family: "LoraBold";
+    src: url("../fonts/Lora_Bold.ttf");
+}
+
+@font-face {
+    font-family: "Castellar";
+    src: url("../fonts/Castellar.ttf");
+}
+
+@font-face {
+    font-family: "LoraRegular";
+    src: url("../fonts/Lora_Regular.ttf");
+}
+
+@font-face {
+    font-family: "MullerBold";
+    src: url("../fonts/Muller_Bold.ttf");
+}
+
+@font-face {
+    font-family: "MullerRegular";
+    src: url("../fonts/Muller_Regular.ttf");
+}
+
+body {
+    margin: 0;
+    background: url("../images/bg_copy.png"),
+    url("../images/metal-carapiny-staryy.png");
+    background-position: -293px 4px;
+
+}
+
+#header {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 59px 0 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+#header #header-menu-container a.active {
+    border-bottom: 1px solid rgb(174, 137, 89);
+    padding-bottom: 5px;
+}
+
+
+a.header-logo {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "LoraRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    max-width: 135px;
+
+}
+
+#header-menu-container {
+    margin-left: 242px;
+}
+
+#header #header-menu-container a.header-menu {
+    font-size: 16px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+#phone-img {
+    margin-left: 229px;
+    display: flex;
+}
+
+.phone {
+    font-size: 15px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    margin-left: 11px;
+}
+
+#titles {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#titles #titles-container {
+    padding: 188px 0 228px 0;
+    position: relative;
+    margin-left: 113px;
+}
+
+#titles #titles-container #context {
+    position: absolute;
+    font-size: 180px;
+    font-family: "Castellar", sans-serif;
+    color: rgba(174, 137, 89, 0.051);
+    line-height: 0.111;
+    left: 237px;
+    top: 100px;
+    z-index: 1;
+}
+
+#titles #titles-container #context-next {
+    font-size: 180px;
+    font-family: "Castellar", sans-serif;
+    color: rgba(174, 137, 89, 0.051);
+    line-height: 0.111;
+    position: absolute;
+    z-index: 1;
+    bottom: 107px;
+    right: 15px;
+}
+
+#titles img#image-barber {
+    z-index: 1111;
+}
+
+#titles #titles-container #title-text {
+    font-size: 40px;
+    font-family: "LoraRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    max-width: 508px;
+}
+
+#titles #titles-container #title-text-min {
+    margin-top: 40px;
+    font-size: 22px;
+    font-family: "LoraRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+}
+
+#titles #titles-container #online {
+    margin-top: 50px;
+}
+
+.btn-sing-up {
+    border: none;
+    background-color: rgb(174, 137, 89);
+    box-shadow: 0 0 19px 7px rgba(152, 108, 52, 0.2);
+    font-size: 18px;
+    font-family: "MullerBold", sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 23px 33px;
+    cursor: pointer
+}
+
+#denomination {
+    padding: 60px 0;
+    background: #131318;
+}
+
+#denomination #denomination-content {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#denomination .denomination-container {
+    display: flex;
+    align-items: center;
+}
+
+#denomination .denomination-container .denomination-text {
+    margin-left: 30px;
+    font-size: 18px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#description {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 99px 0 100px 0;
+}
+
+#description #description-text {
+    font-size: 32px;
+    font-family: "LoraRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.156;
+    text-align: center;
+    max-width: 581px;
+    margin: 0 auto;
+}
+
+#description #description-container {
+    display: flex;
+    margin-top: 60px;
+}
+
+#description #description-container #description-content img.br {
+    margin-bottom: 48px;
+    transition: 1s;
+}
+
+img.br:hover {
+    transform: scale(1.1);
+}
+
+#description #description-container #description-content .bonus {
+    width: 31px;
+    text-align: center;
+}
+
+#description #description-container #description-content .text .bonus-text {
+    font-size: 18px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+}
+
+#description #description-container #description-content .text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 24px;
+}
+
+#description #description-container #denomination-content-next {
+    margin-left: 68px;
+}
+
+#description #description-container #denomination-content-next .content-text {
+    font-size: 16px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.313;
+    width: 472px;
+}
+
+#description #description-container #denomination-content-next .tx {
+    margin-top: 35px;
+}
+
+#description #description-container #denomination-content-next img {
+    margin-top: 33px;
+    margin-left: 115px;
+    text-align: center;
+}
+
+.insta {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.insta .insta-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+}
+
+
+.insta .insta-container .insta-text {
+    font-size: 28px;
+    font-family: "LoraRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    width: 423px;
+    margin-left: 83px;
+}
+
+.insta .insta-text span {
+    font-family: "LoraBold", sans-serif;
+}
+
+.insta .insta-container .up {
+    padding: 23px 60px;
+    margin-left: 263px;
+}
+
+#price {
+    max-width: 1170px;;
+    margin: 0 auto;
+    position: relative;
+    padding: 100px 0;
+}
+
+#price img#scissors {
+    position: absolute;
+    top: 230px;
+    left: 267px;
+}
+
+#price #price-bloc-content {
+    margin-right: 316px;
+}
+
+#price #price-text {
+    font-size: 32px;
+    font-family: "LoraRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 59px;
+}
+
+#price .price-list {
+    font-size: 25px;
+    font-family: "LoraRegular", sans-serif;
+    color: rgb(174, 137, 89);
+}
+
+#price .price-list-container {
+    margin-top: 41px;
+}
+
+#price #price-bloc {
+    display: flex;
+    margin-left: 83px;
+}
+
+#price #price-bloc #price-bloc-content-next .list {
+    margin-top: 50px;
+}
+
+#price .price-list-bloc {
+    display: flex;
+}
+
+#price .price-list-text {
+    font-size: 18px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    width: 183px;
+}
+
+#price .price-list-container .sum {
+    font-size: 18px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    margin-left: 95px;
+}
+
+#price .price-list-container .price-list-text-mini {
+    font-size: 14px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(89, 85, 80);
+    line-height: 1.429;
+    width: 214px;
+    margin-top: 10px;
+}
+
+#price .price-list-container .con {
+    width: 235px;
+}
+
+.insta-bg {
+    background: url("../images/bg_copy_one.png");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.insta-bg span#color-discount {
+    color: #ae8959;
+}
+
+.insta .insta-container .pa {
+    padding: 23px 43px;
+}
+
+#masters {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 207px 0;
+    position: relative;
+}
+
+#border-slick {
+
+    background-color: rgb(174, 137, 89);
+    position: absolute;
+    right: 0;
+    bottom: 164px;
+    width: 2px;
+    height: 790px;
+
+}
+
+
+#masters #masters-title {
+    font-size: 32px;
+    font-family: "LoraRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#masters #masters-text {
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.389;
+    text-align: center;
+    width: 805px;
+}
+
+.slick-dots li button:before {
+    content: url("../images/cub.png");
+    top: 7px;
+    left: 5px;
+    opacity: 0;
+}
+
+.slick-next:before {
+    content: url("../images/next_copy.png");
+}
+
+.slick-prev:before {
+    content: url("../images/next.png");
+}
+
+.slick-next {
+    top: 616px;
+    right: 278px;
+}
+
+.slick-prev {
+    left: 270px;
+    top: 616px;
+}
+
+.photo {
+    filter: grayscale(.9);
+}
+
+#masters .center .master .slick-center .bg-color {
+    top: 290px;
+}
+
+.center {
+    margin: 0 auto;
+    max-width: 1004px;
+}
+
+.slick-slide {
+    width: 292px;
+}
+
+img.bg-color:hover {
+    top: 289px;
+}
+
+.center .master .photo .bg-color {
+    position: absolute;
+    width: 318px;
+    height: 114px;
+    top: 326px;
+    margin-left: 8px;
+    opacity: 65%;
+}
+
+.center .master .photo img.photo-min {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.master {
+    margin-top: 85px;
+}
+
+.slick-current {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.slick-track {
+    height: 480px;
+}
+
+.center .slick-track .slick-center {
+    position: relative;
+    z-index: 5555;
+}
+
+.center .slick-track .slick-center img.bg-color {
+    margin-top: -18px;
+    width: 319px;
+    height: 132px;
+    position: fixed;
+}
+
+.center .slick-track .slick-center .photo {
+    filter: grayscale(0);
+}
+
+.center .slick-track .slick-center .slick-name-barber {
+    margin-top: -98px;
+}
+
+.center .slick-track .slick-center .btn-slick {
+    margin-top: -96px;
+    background-color: #ae8959;
+}
+
+.master .slick-name-barber {
+    position: absolute;
+    margin-left: 123px;
+    top: 418px;
+    font-size: 20px;
+    font-family: "LoraRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.05;
+
+}
+
+.master .btn-slick {
+    border-width: 1px;
+    border-color: rgb(174, 137, 89);
+    border-style: solid;
+    position: absolute;
+    margin-left: 90px;
+    top: 452px;
+    font-size: 16px;
+    font-family: "MullerBold", sans-serif;
+    color: rgb(255, 255, 255);
+    background: none;
+    padding: 15px 39px;
+    cursor: pointer;
+}
+
+.master .slick-name-barber.name-barber-dop {
+    margin-left: 144px;
+}
+
+.slick-dots li button {
+    border: 1px solid #ae8959;
+    width: 30px;
+    height: 30px;
+    padding: 6px 5px 3px 5px;
+}
+
+.slick-dots {
+    bottom: -60px;
+    width: 41%;
+    margin-left: 296px
+}
+
+.slick-dots li {
+    margin-right: 20px;
+}
+
+#contacts {
+    background: #131318;
+}
+
+#contacts #contacts-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 60px 0 100px 0;
+}
+
+#contacts #contacts-container #contacts-container-bloc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contacts #contacts-container #contacts-bloc #contacts-bloc-logo {
+    max-width: 135px;
+    margin-left: 83px;
+}
+
+#contacts #contacts-container #contacts-bloc #time {
+    margin-top: 70px;
+    font-size: 15px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    width: 137px;
+    text-align: center;
+    margin-left: 8px;
+}
+
+#contacts #contacts-container #contacts-bloc #address {
+    font-size: 16px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 40px;
+    width: 187px;
+    margin-left: -17px;
+}
+
+#contacts #contacts-container #contacts-bloc #cart {
+    margin-left: 43px;
+    margin-top: -110px;
+}
+
+#contacts #contacts-container #contacts-bloc #contacts-container-bloc #contacts-bloc-content {
+    margin-left: 83px;
+}
+
+#contacts #contacts-container #contacts-bloc #contacts-container-bloc #contacts-bloc-content #site #site-container {
+    font-size: 16px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    width: 184px;
+    margin-top: 40px;
+    margin-left: -12px;
+}
+
+#contacts #contacts-container #contacts-bloc #contacts-container-bloc #contacts-bloc-content #site #icon {
+    margin-top: 20px;
+    margin-left: -22px;
+}
+
+#contacts #contacts-container #contacts-bloc #contacts-container-bloc #contacts-bloc-content #site #icon img {
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+#contacts #contacts-container #contacts-bloc #contacts-container-bloc #contacts-bloc-content #site #icon img:hover {
+    opacity: 0.9;
+}
+
+#contacts #contacts-container #contacts-bloc #contacts-container-bloc #contacts-bloc-content #mail {
+    font-size: 16px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    width: 200px;
+    margin-top: 60px;
+    margin-left: -22px;
+    cursor: pointer;
+}
+
+#contacts #contacts-container #contacts-bloc #contacts-container-bloc #contacts-bloc-content .phone {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+#contacts #contacts-container #contacts-bloc #cart iframe {
+    width: 862px;
+}
+
+.balloon__layout {
+    position: relative;
+    display: none;
+    overflow: hidden;
+    background: #fff;
+}
+
+#footer {
+    background: #131318;
+}
+
+#footer #footer-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-bottom: 61px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer #footer-container .footer-text {
+    font-size: 14px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(80, 79, 79);
+
+}
+
+#discount {
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#discount-container {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(63, 63, 63);
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0 0 40.67px 8.33px rgba(2, 7, 8, 1);
+    width: 580px;
+    padding: 45px 20px;
+    position: relative;
+}
+
+#discount #discount-container #discount-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+#discount #discount-container #discount-text {
+    font-size: 28px;
+    font-family: "LoraRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#reservation-content {
+    max-width: 1004px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+#form-container {
+    background: url("../images/bg_bg_bg.png"),
+    url("../images/zal-barber.png");
+    background-size: cover;
+    padding: 100px 100px 60px 100px;
+    height: 528px;
+}
+
+img#data-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#reserve {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#data-form {
+    font-size: 25px;
+    font-family: "LoraRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 292px;
+    margin: 0 auto;
+}
+
+.reserve-input, input {
+    width: 225px;
+    border: 1px solid rgb(174, 137, 89);
+    background: none;
+    height: 43px;
+    font-size: 16px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+    padding-left: 15px;
+    outline: none;
+}
+
+option {
+    color: #705524;
+}
+
+::placeholder {
+    color: rgb(255, 255, 255);
+    font-family: "MullerRegular", sans-serif;
+    font-size: 16px;
+    border-color: rgb(174, 137, 89);
+
+}
+
+#reserve-block {
+    margin-right: 68px;
+}
+
+#reserve-block-two {
+    margin-right: 68px;
+}
+
+#reserve-button .btn-sing-up {
+    padding: 25px 40px;
+    margin-top: 22px;
+    margin-left: 291px;
+}
+
+select {
+    appearance: none;
+}
+
+select.next {
+    background-image: url("../images/next2.png");
+    background-repeat: no-repeat;
+    background-position: 190px 18px;
+}
+
+#block-text {
+    position: absolute;
+    top: 417px;
+    left: 83px;
+    z-index: 100;
+    display: none;
+}
+
+#block-text-next {
+    position: absolute;
+    top: 417px;
+    left: 83px;
+    z-index: 100;
+    display: none;
+}
+
+#reserve-error {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: "MullerRegular", sans-serif;
+    color: red;
+    display: none;
+}
+
+#thank {
+    background: url("../images/bg_bg_bg.png"),
+    url("../images/zal-barber.png");
+    background-size: cover;
+    padding: 100px 100px 60px 100px;
+    height: 528px;
+    width: 1004px;
+}
+
+#thank-title img#thank-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#thank-title {
+    font-size: 25px;
+    font-family: "LoraRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 287px;
+    margin: 0 auto;
+}
+
+#thank-text {
+    font-size: 18px;
+    font-family: "MullerRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.389;
+    text-align: center;
+    margin: 85px auto auto auto;
+    width: 363px;
+}
+
+#error_name, #error_phone, #error_services, #error_master, #error_date, #error_time {
+    color: red;
+    display: none;
+}
+
+#burger {
+    display: none;
+    color: rgb(174, 137, 89);
+    font-size: 60px;
+}
+
+#cart .img-fluid {
+    height: 436px;
+    width: 862px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

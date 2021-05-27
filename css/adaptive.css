@@ -1,0 +1,762 @@
+/* 1024 - 1229 */
+@media screen and (max-width: 1229px) {
+    #header {
+        margin: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #header-menu-container {
+        margin: 0;
+    }
+
+    #phone-img {
+        margin: 0;
+    }
+
+    #titles {
+        margin: 0;
+
+    }
+
+    #titles #titles-container #context {
+        left: 43px;
+    }
+
+    #titles img#image-barber {
+        width: 50%;
+        height: 50%;
+    }
+
+    #titles #titles-container {
+        padding: 188px 0 82px 0;
+    }
+
+    #denomination #denomination-content {
+        margin: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #description {
+        margin: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #description #description-container #description-content img.br {
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    #price {
+        margin: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #price #price-bloc-content {
+        margin-right: 163px;
+    }
+
+    #masters {
+        margin: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .slick-dots {
+        width: 42%;
+        margin-left: 285px;
+    }
+
+    .slick-prev {
+        top: 614px;
+    }
+
+    .slick-next {
+        top: 614px;
+    }
+
+    #contacts #contacts-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #footer #footer-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #border-slick {
+        display: none;
+    }
+
+    .center .master .photo img.photo-min {
+        width: 317px;
+
+    }
+
+    .center .master .photo .bg-color {
+        margin-left: 8px;
+    }
+
+    .center .slick-track .slick-center img.bg-color {
+        margin-left: 9px;
+        width: 317px;
+
+    }
+
+    .center .slick-initialized .slick-slider .slick-dotted {
+        margin: 0 auto;
+    }
+
+    #price #price-bloc {
+        justify-content: center;
+    }
+
+    #form-container {
+        margin-left: -86px;
+    }
+
+    #reserve-button {
+        text-align: center;
+    }
+
+    #reserve-button .btn-sing-up {
+        margin: 0;
+    }
+
+    #block-text {
+        background-color: rgba(0, 0, 0, 0.85);
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 99999;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #thank {
+        max-width: 1229px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #thank-title img#thank-close {
+        right: 30px;
+    }
+
+    #reserve-error {
+
+
+    }
+
+}
+
+@media screen and (max-width: 1039px) {
+    .center .master .photo .bg-color {
+        margin-left: 7px;
+    }
+
+    .center .slick-track .slick-center img.bg-color {
+        margin-left: 7px;
+        width: 317px;
+    }
+
+    #reserve-button {
+        text-align: center;
+    }
+
+    #reserve-button .btn-sing-up {
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 1027px) {
+    .center .master .photo .bg-color {
+        margin-left: 6px;
+    }
+
+    .center .slick-track .slick-center img.bg-color {
+        margin-left: 6px;
+        width: 317px;
+    }
+
+    #reserve-button {
+        text-align: center;
+    }
+
+    #reserve-button .btn-sing-up {
+        margin: 0;
+    }
+
+}
+
+
+/* 768 - 1023 */
+@media screen and (max-width: 1023px) {
+    a.header-logo {
+        font-size: 20px;
+    }
+
+    #header #header-menu-container a.header-menu {
+        font-size: 14px;
+    }
+
+    .phone {
+        font-size: 13px;
+    }
+
+    #titles #titles-container #context {
+        font-size: 79px;
+    }
+
+    #titles #titles-container #context-next {
+        font-size: 79px;
+        bottom: 28px;
+    }
+
+    #titles #titles-container {
+        padding: 92px 20px 68px 0;
+    }
+
+    #titles #titles-container #title-text {
+        font-size: 30px;
+    }
+
+    #titles #titles-container #title-text-min {
+        font-size: 17px;
+    }
+
+    .btn-sing-up {
+        font-size: 13px;
+    }
+
+    #denomination .denomination-container .denomination-text {
+        font-size: 13px;
+    }
+
+    #denomination .denomination-container img {
+        width: 40px;
+    }
+
+    #description #description-text {
+        font-size: 26px;
+        max-width: 475px;
+    }
+
+    #description #description-container #denomination-content-next .content-text {
+        font-size: 14px;
+        width: 311px;
+    }
+
+    #description #description-container #description-content .text .bonus-text {
+        font-size: 10px;
+    }
+
+    #description #description-container #denomination-content-next img {
+        margin-top: -111px;
+        margin-left: 0;
+    }
+
+    .insta .insta-container {
+        justify-content: space-evenly;
+    }
+
+    .insta .insta-container .insta-text {
+        font-size: 19px;
+        width: 260px;
+    }
+
+    .insta .insta-container .up {
+        margin-left: 170px;
+    }
+
+    #price #price-text {
+        font-size: 26px;
+    }
+
+    #price .price-list {
+        font-size: 21px;
+    }
+
+    #price .price-list-text {
+        font-size: 15px;
+    }
+
+    #price .price-list-container .sum {
+        font-size: 13px;
+        margin-left: -15px;
+    }
+
+    #price .price-list-container .price-list-text-mini {
+        margin-top: 0;
+    }
+
+    #price #price-bloc-content {
+        margin-right: 90px;
+    }
+
+    #price img#scissors {
+        left: 50px;
+    }
+
+    #masters {
+        padding: 115px 0;
+    }
+
+    #masters #masters-title {
+        font-size: 26px;
+    }
+
+    #masters #masters-text {
+        font-size: 16px;
+        max-width: 717px;
+    }
+
+    .center {
+        max-width: 724px;
+        align-items: center;
+    }
+
+    .center .master .photo img.photo-min {
+        width: 235px;
+
+        position: fixed;
+    }
+
+    .center .master .photo .bg-color {
+        margin-left: 0;
+        margin-top: -90px;
+        width: 235px;
+        height: 90px;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .center .slick-track .slick-center img.bg-color {
+        margin-left: 0px;
+        max-width: 236px;
+        margin-top: -94px;
+
+        position: fixed;
+        z-index: 1;
+    }
+
+    .center .slick-initialized .slick-slider .slick-dotted {
+        margin: 0;
+
+    }
+
+    .master .slick-name-barber {
+        margin-left: 85px;
+        top: 342px;
+        position: fixed;
+    }
+
+    .master .btn-slick {
+        margin-left: 56px;
+        top: 369px;
+        font-size: 14px;
+        padding: 3px 30px;
+        position: fixed;
+    }
+
+    .master .slick-name-barber.name-barber-dop {
+        margin-left: 96px;
+        position: fixed;
+    }
+
+    .slick-dots {
+        width: 58%;
+        margin-left: 152px;
+        top: 467px;
+    }
+
+    .slick-prev {
+        top: 480px;
+        z-index: 10;
+        left: 140px;
+
+    }
+
+    .slick-next {
+        top: 481px;
+        right: 147px;
+    }
+    #form-container {
+        margin-left: -69px;
+        max-width: 1000px;
+        margin-top: -120px;
+    }
+
+    #reserve-block {
+        margin-right: 15px;
+    }
+
+    #reserve-block-two {
+        margin-right: 15px;
+    }
+
+    .reserve-input, input {
+        width: 164px;
+        font-size: 14px;
+    }
+
+    #reserve-button {
+        text-align: center;
+    }
+
+    #reserve-button .btn-sing-up {
+        margin: 0;
+    }
+
+    img#data-close {
+        top: -72px;
+    }
+
+    #thank {
+        max-width: 600px;
+    }
+
+}
+
+/* 425 - 767 */
+@media screen and (max-width: 767px) {
+    #burger {
+        display: block;
+    }
+
+    #header-menu-container {
+        top: 0;
+        left: 0;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 999999;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 20px 0;
+        display: none;
+    }
+
+    #header #header-menu-container a.header-menu {
+        margin: 0;
+        text-align: center;
+        display: block;
+        padding-top: 30px;
+        border: none;
+        width: 100%;
+    }
+
+    #masters #masters-text {
+        max-width: 320px;
+    }
+
+    #price img#scissors {
+        width: 80%;
+    }
+
+    #price #price-bloc {
+        display: block;
+    }
+
+    #price #price-bloc-content {
+        width: 400px;
+        margin-bottom: 55px;
+    }
+
+    #description #description-container #denomination-content-next {
+        margin: 0 auto;
+        width: 200px;
+    }
+
+    #description #description-container #denomination-content-next img {
+        margin-left: 50px;
+    }
+
+    #description #description-container #denomination-content-next .content-text {
+        width: 300px;
+        margin-top: 50px;
+    }
+
+    #description #description-container {
+        display: block;
+    }
+
+    #description #description-container #description-content img.br {
+        width: 90%;
+    }
+
+    .insta .insta-container .up {
+        margin: 0;
+    }
+
+    #titles {
+        display: block;
+    }
+
+    #titles img#image-barber {
+        width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    #titles #titles-container #context {
+        display: none;
+    }
+
+    #titles #titles-container #context-next {
+        display: none;
+    }
+
+    #price img#scissors {
+        display: none;
+    }
+
+    #price {
+        width: 440px;
+        margin: 0 auto;
+    }
+
+    #denomination .denomination-container .denomination-text {
+        margin-left: 5px;
+    }
+
+    .insta .insta-container .insta-text {
+        padding-left: 20px;
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .insta .insta-container .up {
+        padding: 19px 29px;
+    }
+
+    .insta .insta-container .insta-text {
+        width: 188px;
+    }
+
+    .center {
+        max-width: 398px;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .slick-track {
+        left: -144px;
+        padding-left: 97px;
+    }
+
+    .slick-dots {
+        width: 405px;
+        margin-left: 5px;
+        display: none !important;
+    }
+
+    .slick-prev {
+        top: 479px;
+    }
+
+    .slick-next {
+        top: 479px;
+        right: 127px;
+    }
+
+    #price #price-bloc-content {
+        max-width: 235px;
+    }
+
+    #price {
+        max-width: 420px;
+    }
+
+    #contacts #contacts-container #contacts-bloc #contacts-bloc-logo {
+        display: none;
+    }
+
+    #contacts #contacts-container #contacts-bloc #contacts-container-bloc #contacts-bloc-content {
+        margin-top: 248px;
+    }
+
+    #contacts #contacts-container #contacts-bloc #cart {
+        margin-left: -259px;
+        margin-top: -558px;
+    }
+
+    #reserve {
+        display: block;
+        margin-top: 15px;
+    }
+
+    #form-container {
+        padding-top: 20px;
+        height: 565px;
+    }
+
+    #reserve-block {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #reserve-block-two {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #reserve-block-next {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #data-form {
+        font-size: 16px;
+        width: 190px;
+    }
+
+    .reserve-input, input {
+        width: 164px;
+        font-size: 14px;
+        margin: 6px;
+    }
+
+    #reserve-button .btn-sing-up {
+        margin-top: 15px;
+    }
+
+    #masters #masters-text {
+        font-size: 11px;
+    }
+
+    #thank {
+        max-width: 425px;
+    }
+
+    #thank-title {
+        width: 220px;
+    }
+
+    #thank-text {
+        width: 225px;
+    }
+}
+
+
+/*320 - 479*/
+@media screen and (max-width: 424px) {
+    a.header-logo {
+        max-width: 77px;
+        font-size: 14px;
+    }
+
+    .phone {
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+    #denomination #denomination-content {
+        display: block;
+
+    }
+
+    #denomination .denomination-container img {
+        width: 35px;
+        margin-top: 23px;
+    }
+
+    #denomination .denomination-container .denomination-text {
+        font-size: 15px;
+        margin-top: 27px;
+    }
+
+    #titles #titles-container #title-text {
+        font-size: 21px;
+    }
+
+    #titles #titles-container #title-text-min {
+        font-size: 15px;
+    }
+
+    #titles img#image-barber {
+        width: 90%;
+    }
+
+    #description #description-container #denomination-content-next .content-text {
+        width: 200px;
+    }
+
+    #description #description-container #denomination-content-next img {
+        margin-left: 0;
+    }
+
+    #price #price-text {
+        font-size: 23px;
+    }
+
+    #price {
+        max-width: 320px;
+    }
+
+    #price #price-bloc-content {
+        max-width: 150px;
+    }
+
+    #price .price-list-container .con {
+        width: 170px;
+    }
+
+    #price .price-list-text {
+        font-size: 11px;
+    }
+
+    #price .price-list-container .sum {
+        font-size: 9px;
+    }
+
+    #price .price-list-container .price-list-text-mini {
+        max-width: 122px;
+        font-size: 11px;
+    }
+
+    .insta .insta-container .up {
+        padding: 12px 4px;
+    }
+
+    #masters #masters-title {
+        font-size: 20px;
+    }
+
+    #masters #masters-text {
+        font-size: 11px;
+    }
+
+    .slick-track {
+        left: -168px;
+    }
+
+    #form-container {
+        margin-left: -148px;
+    }
+
+    #thank {
+        max-width: 320px;
+    }
+
+    #thank-title {
+        width: 100px;
+        font-size: 16px;
+    }
+
+    #thank-text {
+        margin-top: 50px;
+        width: 100px;
+        font-size: 12px;
+    }
+}
