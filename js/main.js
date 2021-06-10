@@ -88,9 +88,6 @@ $(document).ready(() => {
         }
     });
 
-
-
-
     $('.center').slick({
         centerMode: true,
         centerPadding: '0',
