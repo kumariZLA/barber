@@ -19,7 +19,8 @@
 
     #titles {
         margin: 0;
-
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     #titles #titles-container #context {
@@ -27,12 +28,13 @@
     }
 
     #titles img#image-barber {
-        width: 50%;
-        height: 50%;
+
     }
 
     #titles #titles-container {
         padding: 188px 0 82px 0;
+        margin: 0 auto;
+        max-width: 500px;
     }
 
     #denomination #denomination-content {
@@ -52,6 +54,10 @@
         margin-left: 20px;
     }
 
+    #description #description-container #description-content .text .text-dop {
+        margin-left: 12px;
+    }
+
     #price {
         margin: 0;
         padding-left: 20px;
@@ -63,9 +69,10 @@
     }
 
     #masters {
-        margin: 0;
+        margin: 0 auto;
         padding-left: 20px;
         padding-right: 20px;
+        max-width: 1024px;
     }
 
     .slick-dots {
@@ -74,11 +81,11 @@
     }
 
     .slick-prev {
-        top: 614px;
+        top: 556px;
     }
 
     .slick-next {
-        top: 614px;
+        top: 556px;
     }
 
     #contacts #contacts-container {
@@ -91,23 +98,36 @@
         padding-right: 20px;
     }
 
-    #border-slick {
-        display: none;
-    }
-
     .center .master .photo img.photo-min {
-        width: 317px;
-
+        max-width: 250px;
     }
 
     .center .master .photo .bg-color {
-        margin-left: 8px;
+        margin-left: 39px;
+        max-width: 250px;
+        top: 233px;
+    }
+
+    .master .slick-name-barber {
+        top: 333px;
+    }
+
+    .center .slick-track .slick-center .slick-name-barber {
+        margin-top: -147px;
+    }
+
+    .master .btn-slick {
+        top: 372px;
+    }
+
+    .center .slick-track .slick-center .btn-slick {
+        margin-top: -149px;
     }
 
     .center .slick-track .slick-center img.bg-color {
-        margin-left: 9px;
-        width: 317px;
-
+        margin-left: 39px;
+        width: 250px;
+        margin-top: -57px;
     }
 
     .center .slick-initialized .slick-slider .slick-dotted {
@@ -118,56 +138,7 @@
         justify-content: center;
     }
 
-    #form-container {
-        margin-left: -86px;
-    }
 
-    #reserve-button {
-        text-align: center;
-    }
-
-    #reserve-button .btn-sing-up {
-        margin: 0;
-    }
-
-    #block-text {
-        background-color: rgba(0, 0, 0, 0.85);
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-        z-index: 99999;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #thank {
-        max-width: 1229px;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    #thank-title img#thank-close {
-        right: 30px;
-    }
-
-    #reserve-error {
-
-
-    }
-
-}
-
-@media screen and (max-width: 1039px) {
-    .center .master .photo .bg-color {
-        margin-left: 7px;
-    }
-
-    .center .slick-track .slick-center img.bg-color {
-        margin-left: 7px;
-        width: 317px;
-    }
 
     #reserve-button {
         text-align: center;
@@ -178,69 +149,37 @@
     }
 
 }
-
-@media screen and (max-width: 1027px) {
-    .center .master .photo .bg-color {
-        margin-left: 6px;
-    }
-
-    .center .slick-track .slick-center img.bg-color {
-        margin-left: 6px;
-        width: 317px;
-    }
-
-    #reserve-button {
-        text-align: center;
-    }
-
-    #reserve-button .btn-sing-up {
-        margin: 0;
-    }
-
-}
-
 
 /* 768 - 1023 */
 @media screen and (max-width: 1023px) {
-    a.header-logo {
-        font-size: 20px;
+
+    #header {
+        justify-content: space-around;
     }
 
-    #header #header-menu-container a.header-menu {
-        font-size: 14px;
+    #phone-img {
+        display: none;
     }
 
-    .phone {
-        font-size: 13px;
+    #titles {
+        align-items: flex-end;
     }
 
     #titles #titles-container #context {
-        font-size: 79px;
+        left: -100px;
+    }
+
+    #titles img#image-barber {
+        max-width: 400px;
+        max-height: 400px;
     }
 
     #titles #titles-container #context-next {
-        font-size: 79px;
         bottom: 28px;
     }
 
     #titles #titles-container {
-        padding: 92px 20px 68px 0;
-    }
-
-    #titles #titles-container #title-text {
-        font-size: 30px;
-    }
-
-    #titles #titles-container #title-text-min {
-        font-size: 17px;
-    }
-
-    .btn-sing-up {
-        font-size: 13px;
-    }
-
-    #denomination .denomination-container .denomination-text {
-        font-size: 13px;
+        padding: 92px 20px 68px 20px;
     }
 
     #denomination .denomination-container img {
@@ -248,17 +187,22 @@
     }
 
     #description #description-text {
-        font-size: 26px;
         max-width: 475px;
     }
 
-    #description #description-container #denomination-content-next .content-text {
-        font-size: 14px;
-        width: 311px;
+    #denomination #denomination-content {
+        display: block;
     }
 
-    #description #description-container #description-content .text .bonus-text {
-        font-size: 10px;
+    #denomination .denomination-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 32px;
+    }
+
+    #description #description-container #denomination-content-next .content-text {
+        max-width: 311px;
     }
 
     #description #description-container #denomination-content-next img {
@@ -271,28 +215,19 @@
     }
 
     .insta .insta-container .insta-text {
-        font-size: 19px;
-        width: 260px;
+        margin: 0;
+        max-width: 260px;
     }
 
     .insta .insta-container .up {
-        margin-left: 170px;
+        margin: 0;
     }
 
-    #price #price-text {
-        font-size: 26px;
-    }
-
-    #price .price-list {
-        font-size: 21px;
-    }
-
-    #price .price-list-text {
-        font-size: 15px;
+    #price #price-bloc {
+        margin: 0 auto;
     }
 
     #price .price-list-container .sum {
-        font-size: 13px;
         margin-left: -15px;
     }
 
@@ -312,14 +247,10 @@
         padding: 115px 0;
     }
 
-    #masters #masters-title {
-        font-size: 26px;
-    }
-
     #masters #masters-text {
-        font-size: 16px;
         max-width: 717px;
     }
+
 
     .center {
         max-width: 724px;
@@ -327,44 +258,45 @@
     }
 
     .center .master .photo img.photo-min {
-        width: 235px;
-
+        left: 0;
         position: fixed;
     }
 
     .center .master .photo .bg-color {
         margin-left: 0;
-        margin-top: -90px;
-        width: 235px;
+        margin-top: 23px;
+        width: 240px;
         height: 90px;
         position: fixed;
         z-index: 1;
     }
 
     .center .slick-track .slick-center img.bg-color {
-        margin-left: 0px;
-        max-width: 236px;
-        margin-top: -94px;
-
+        margin-left: 0;
+        max-width: 250px;
+        margin-top: -39px;
         position: fixed;
         z-index: 1;
     }
 
     .center .slick-initialized .slick-slider .slick-dotted {
         margin: 0;
-
     }
 
     .master .slick-name-barber {
-        margin-left: 85px;
-        top: 342px;
+        margin-left: 81px;
+        top: 347px;
         position: fixed;
     }
 
+    .center .slick-track .slick-center .btn-slick {
+        margin-top: -149px;
+        left: 33px;
+    }
+
     .master .btn-slick {
-        margin-left: 56px;
-        top: 369px;
-        font-size: 14px;
+        margin-left: 42px;
+        top: 379px;
         padding: 3px 30px;
         position: fixed;
     }
@@ -374,56 +306,66 @@
         position: fixed;
     }
 
+    .slick-current {
+        height: 156px;
+    }
+
     .slick-dots {
         width: 58%;
         margin-left: 152px;
-        top: 467px;
+        top: 534px;
     }
 
     .slick-prev {
-        top: 480px;
-        z-index: 10;
+        top: 547px;
         left: 140px;
 
     }
 
     .slick-next {
-        top: 481px;
-        right: 147px;
-    }
-    #form-container {
-        margin-left: -69px;
-        max-width: 1000px;
-        margin-top: -120px;
-    }
-
-    #reserve-block {
-        margin-right: 15px;
-    }
-
-    #reserve-block-two {
-        margin-right: 15px;
-    }
-
-    .reserve-input, input {
-        width: 164px;
-        font-size: 14px;
-    }
-
-    #reserve-button {
-        text-align: center;
-    }
-
-    #reserve-button .btn-sing-up {
-        margin: 0;
-    }
-
-    img#data-close {
-        top: -72px;
+        top: 547px;
+        right: 146px;
     }
 
     #thank {
         max-width: 600px;
+    }
+
+    #reserve-block {
+        margin-right: 10px;
+    }
+
+    #reserve-block-two {
+        margin-right: 10px;
+    }
+
+    .reserve-input, input {
+        width: 184px;
+    }
+
+    #reserve-button .btn-sing-up {
+        position: fixed;
+        margin-left: -131px;
+    }
+
+    #error-phone {
+        width: 188px;
+    }
+
+    #error-name {
+        width: 188px;
+    }
+
+    #error-services {
+        width: 188px;
+    }
+
+    #error-master {
+        width: 188px;
+    }
+
+    #thank-title img#thank-close {
+        left: 385px;
     }
 
 }
@@ -432,6 +374,10 @@
 @media screen and (max-width: 767px) {
     #burger {
         display: block;
+        position: absolute;
+        left: 41px;
+        top: 47px;
+        font-size: 45px;
     }
 
     #header-menu-container {
@@ -447,6 +393,10 @@
         display: none;
     }
 
+    #header #header-menu-container a.header-menu:hover {
+        border: none;
+    }
+
     #header #header-menu-container a.header-menu {
         margin: 0;
         text-align: center;
@@ -457,25 +407,11 @@
     }
 
     #masters #masters-text {
-        max-width: 320px;
-    }
-
-    #price img#scissors {
-        width: 80%;
-    }
-
-    #price #price-bloc {
-        display: block;
-    }
-
-    #price #price-bloc-content {
-        width: 400px;
-        margin-bottom: 55px;
+        max-width: 390px;
     }
 
     #description #description-container #denomination-content-next {
         margin: 0 auto;
-        width: 200px;
     }
 
     #description #description-container #denomination-content-next img {
@@ -483,28 +419,60 @@
     }
 
     #description #description-container #denomination-content-next .content-text {
-        width: 300px;
-        margin-top: 50px;
+        max-width: 767px;
+        margin: 50px auto auto auto;
     }
 
     #description #description-container {
         display: block;
     }
 
+    #denomination .denomination-container .denomination-text {
+        margin-left: 10px;
+    }
+
     #description #description-container #description-content img.br {
-        width: 90%;
+        margin: 0 auto;
+        max-width: 767px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .insta .insta-container {
+        display: block;
+        text-align: center;
+    }
+
+    .insta .insta-container .insta-text {
+        margin: 0 auto;
+        max-width: 307px;
+        text-align: center;
     }
 
     .insta .insta-container .up {
-        margin: 0;
+        margin: 30px auto auto auto;
     }
 
     #titles {
         display: block;
+        margin: 0 auto;
+        max-width: 425px;
+    }
+
+    #titles #titles-container #title-text {
+        text-align: center;
+    }
+
+    #titles #titles-container #title-text-min {
+        text-align: center;
+    }
+
+    #titles #titles-container #online {
+        text-align: center;
     }
 
     #titles img#image-barber {
-        width: 100%;
+
         padding-right: 20px;
         padding-left: 20px;
     }
@@ -521,33 +489,39 @@
         display: none;
     }
 
-    #price {
-        width: 440px;
-        margin: 0 auto;
-    }
-
     #denomination .denomination-container .denomination-text {
-        margin-left: 5px;
+        margin-left: 20px;
     }
 
-    .insta .insta-container .insta-text {
-        padding-left: 20px;
-        font-size: 12px;
-        margin: 0;
-    }
-
-    .insta .insta-container .up {
-        padding: 19px 29px;
-    }
-
-    .insta .insta-container .insta-text {
-        width: 188px;
-    }
 
     .center {
         max-width: 398px;
         margin: 0 auto;
         align-items: center;
+    }
+
+    .center .master .photo img.photo-min {
+        left: -24px;
+        max-width: 236px;
+    }
+
+    .center .slick-track .slick-center img.bg-color {
+        margin-left: -24px;
+        max-width: 235px;
+    }
+
+    .center .slick-track .slick-center .slick-name-barber {
+        margin-top: -144px;
+        left: -15px;
+    }
+
+    .master .slick-name-barber.name-barber-dop {
+        margin-left: 89px;
+    }
+
+    .center .slick-track .slick-center .btn-slick {
+        margin-top: -142px;
+        left: 3px;
     }
 
     .slick-track {
@@ -562,33 +536,93 @@
     }
 
     .slick-prev {
-        top: 479px;
+        top: 532px;
+        left: 80px;
     }
 
     .slick-next {
-        top: 479px;
-        right: 127px;
+        top: 532px;
+        right: 79px;
     }
 
-    #price #price-bloc-content {
-        max-width: 235px;
-    }
 
     #price {
-        max-width: 420px;
+        margin: 0 auto;
     }
 
+    #price .price-list {
+        text-align: center;
+        max-width: 285px;
+        margin: 0 auto;
+    }
+
+    #price .price-list-container .price-list-text-mini {
+        width: 260px;
+    }
+
+    #price .price-list-container .sum {
+        margin-left: 110px;
+    }
+
+    #price img#scissors {
+        width: 80%;
+    }
+
+    #price #price-bloc {
+        display: block;
+    }
+
+    #price-bloc-content-next {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+
+    #price #price-bloc-content {
+        width: 400px;
+        margin-bottom: 55px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
     #contacts #contacts-container #contacts-bloc #contacts-bloc-logo {
-        display: none;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #contacts #contacts-container #contacts-bloc #time {
+        margin: 70px auto auto auto;
+    }
+
+    #contacts #contacts-container #contacts-bloc #address {
+        margin: 40px auto auto auto;
+    }
+
+    #contacts #contacts-container #contacts-bloc #contacts-container-bloc #contacts-bloc-content #site #site-container {
+        margin: 35px auto auto auto;
+    }
+
+    #contacts #contacts-container #contacts-bloc #contacts-container-bloc #contacts-bloc-content #site #icon {
+        margin: 20px auto auto auto;
+    }
+
+    #contacts #contacts-container #contacts-bloc #contacts-container-bloc #contacts-bloc-content #mail {
+        margin: 55px auto auto auto;
+    }
+
+    #contacts #contacts-container #contacts-bloc #contacts-container-bloc #contacts-bloc-content .phone {
+        margin: 15px auto auto auto;
+        text-align: center;
     }
 
     #contacts #contacts-container #contacts-bloc #contacts-container-bloc #contacts-bloc-content {
-        margin-top: 248px;
+        margin: 0 auto;
     }
 
     #contacts #contacts-container #contacts-bloc #cart {
-        margin-left: -259px;
-        margin-top: -558px;
+        display: none;
     }
 
     #reserve {
@@ -617,22 +651,16 @@
     }
 
     #data-form {
-        font-size: 16px;
         width: 190px;
     }
 
     .reserve-input, input {
         width: 164px;
-        font-size: 14px;
         margin: 6px;
     }
 
     #reserve-button .btn-sing-up {
         margin-top: 15px;
-    }
-
-    #masters #masters-text {
-        font-size: 11px;
     }
 
     #thank {
@@ -646,62 +674,104 @@
     #thank-text {
         width: 225px;
     }
+
+    .reserve-input, input {
+        width: 232px;
+
+    }
+
+    #error-phone {
+        display: none !important;
+    }
+
+    #error-name {
+display: none !important;
+    }
+
+    #error-services {
+        display: none !important;
+    }
+
+    #error-master {
+        display: none !important;
+    }
+
+    #error-date {
+        display: none !important;
+    }
+
+    #error-time {
+        display: none !important;
+    }
+
+    #reserve-button .btn-sing-up {
+        margin-left: -116px;
+    }
+
+    #thank-title img#thank-close {
+        left: 246px;
+    }
 }
 
-
-/*320 - 479*/
+/*320 - 424*/
 @media screen and (max-width: 424px) {
     a.header-logo {
         max-width: 77px;
-        font-size: 14px;
     }
 
     .phone {
-        font-size: 14px;
         margin-left: 0;
     }
 
     #denomination #denomination-content {
         display: block;
+    }
 
+    #denomination .denomination-container {
+        display: block;
+        text-align: center;
     }
 
     #denomination .denomination-container img {
-        width: 35px;
-        margin-top: 23px;
+
     }
 
     #denomination .denomination-container .denomination-text {
-        font-size: 15px;
         margin-top: 27px;
-    }
-
-    #titles #titles-container #title-text {
-        font-size: 21px;
-    }
-
-    #titles #titles-container #title-text-min {
-        font-size: 15px;
     }
 
     #titles img#image-barber {
         width: 90%;
     }
 
-    #description #description-container #denomination-content-next .content-text {
-        width: 200px;
+
+
+    #border-slick-one {
+        display: none;
+    }
+
+    #border-slick-two {
+        display: none;
+    }
+
+    #border-slick {
+        display: none;
     }
 
     #description #description-container #denomination-content-next img {
         margin-left: 0;
     }
 
-    #price #price-text {
-        font-size: 23px;
-    }
-
     #price {
         max-width: 320px;
+    }
+
+    #price .price-list-bloc {
+        display: block;
+    }
+
+    #price .price-list-container .sum {
+        margin-left: 44px;
     }
 
     #price #price-bloc-content {
@@ -712,51 +782,67 @@
         width: 170px;
     }
 
-    #price .price-list-text {
-        font-size: 11px;
-    }
-
-    #price .price-list-container .sum {
-        font-size: 9px;
-    }
-
     #price .price-list-container .price-list-text-mini {
         max-width: 122px;
         font-size: 11px;
+        margin: 0 auto;
     }
 
-    .insta .insta-container .up {
-        padding: 12px 4px;
+    #price .price-list-text {
+        margin: 0 auto;
+        text-align: center;
     }
 
-    #masters #masters-title {
-        font-size: 20px;
+    #price .price-list-container .sum {
+        margin: 0 auto;
+        text-align: center;
     }
 
     #masters #masters-text {
-        font-size: 11px;
+        max-width: 314px;
     }
 
-    .slick-track {
-        left: -168px;
+    .center .slick-track .slick-center .slick-name-barber {
+        left: -25px;
+    }
+
+    .center .slick-track .slick-center .btn-slick {
+        left: -7px;
     }
 
     #form-container {
         margin-left: -148px;
     }
 
+
     #thank {
         max-width: 320px;
     }
 
     #thank-title {
-        width: 100px;
-        font-size: 16px;
+        max-width: 152px;
     }
 
     #thank-text {
         margin-top: 50px;
-        width: 100px;
-        font-size: 12px;
+        max-width: 152px;
+    }
+
+    #footer #footer-container {
+        display: block;
+        text-align: center;
+    }
+
+    #reserve-button .btn-sing-up {
+        margin-left: -116px;
+    }
+
+    #form-container {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #thank-title img#thank-close {
+        left: 170px;
     }
 }

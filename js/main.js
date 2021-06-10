@@ -1,4 +1,5 @@
 $(document).ready(() => {
+
     $('.open-modal').click(() => {
         $('#discount').css('display', 'flex');
     });
@@ -20,6 +21,7 @@ $(document).ready(() => {
     $('.open-registration').click(() => {
         $('#block-text-next').css('display', 'flex');
     });
+
     $('#data-close').click(() => {
         $('#block-text-next').hide();
         $('#reserve-error').hide();
@@ -27,6 +29,14 @@ $(document).ready(() => {
     $('#thank-close').click(() => {
         $('#block-text').hide();
         $('#reserve-error').hide();
+    });
+
+    $('#burger').click(() => {
+        $('#header-menu-container').css('display', 'block');
+    });
+
+    $('.header-menu').click(() => {
+        $('#header-menu-container').css('display', 'none');
     });
 
     $(function () {
@@ -40,9 +50,7 @@ $(document).ready(() => {
         let date = $('#datepicker');
         let time = $('#time-for');
 
-
         if (name.val() && phone.val() && services.val() > 0 && master.val() > 0 && date.val() && time.val() > 0) {
-
             $.ajax({
                 type: 'post',
                 url: 'mail.php',
@@ -56,12 +64,32 @@ $(document).ready(() => {
                     alert('Ошибка бронирования. Свяжитесь, пожалуйста, по номеру телефона.')
                 }
             })
+        } else if (name.val() === '') {
+            $('#error-name').css('display', 'flex');
+            $(name).css('border-color', 'red');
+
+        } else if (phone.val() === '') {
+            $('#error-phone').css('display', 'flex');
+            $(phone).css('border-color', 'red');
+        } else if (services.val() === '0') {
+            $('#error-services').css('display', 'flex');
+            $(services).css('border-color', 'red');
+        } else if (master.val() === '0') {
+            $('#error-master').css('display', 'flex');
+            $(master).css('border-color', 'red');
+        } else if (date.val() === '') {
+            $('#error-date').css('display', 'flex');
+            $(date).css('border-color', 'red');
+        } else if (time.val() === '0') {
+            $('#error-time').css('display', 'flex');
+            $(time).css('border-color', 'red');
         } else {
-            $('#reserve-error').show();
-            $('input').css('border-color', 'red');
-            $('select').css('border-color', 'red');
+            $('#block-text').css('display', 'flex');
         }
     });
+
+
+
 
     $('.center').slick({
         centerMode: true,
@@ -97,6 +125,5 @@ $(document).ready(() => {
             }
         ]
     });
+})
 
-
-});

@@ -16,12 +16,12 @@
 
 <div id="header">
     <div id="burger">&#9776;</div>
-    <a class="header-logo" href="#">Strong club Barbershop</a>
+    <img src="images/Strong-club-Barbershop.png" alt="">
     <div id="header-menu-container">
-        <a class="header-menu active" href="#">Услуги</a><!--
-        --><a class="header-menu" href="#price-text">Цены</a><!--
-        --><a class="header-menu" href="#masters-title">Барберы</a><!--
-        --><a class="header-menu" href="#description-text">О нас</a>
+        <a class="header-menu active" href="#price-text">Услуги</a><!--
+        --><a class="header-menu active" href="#price-text">Цены</a><!--
+        --><a class="header-menu active" href="#masters-title">Барберы</a><!--
+        --><a class="header-menu active" href="#description-text">О нас</a>
     </div>
     <div id="phone-img">
         <img src="images/communications.png" alt="">
@@ -31,8 +31,8 @@
 
 <div id="titles">
     <div id="titles-container" class="wow animate__pulse">
-        <div id="context">strong</div>
-        <div id="context-next">club</div>
+        <div id="context"><img src="images/strong.png" alt=""></div>
+        <div id="context-next"><img src="images/club.png" alt=""></div>
         <div id="title-text">
             Создайте деловой имидж, который достоин Вас!
         </div>
@@ -40,7 +40,9 @@
             Мужские стрижки и бритье в центре Москвы
         </div>
         <div id="online">
-            <button class="btn-sing-up">Записаться онлайн</button>
+            <a href="#masters-title">
+                <button class="btn-sing-up">Записаться онлайн</button>
+            </a>
         </div>
     </div>
     <img id="image-barber" src="images/barber.png" alt="">
@@ -64,6 +66,7 @@
 </div>
 
 <div id="description">
+    <div id="border-slick-one"></div>
     <div id="description-text" class="wow animate__pulse">
         Strong Club – это намного больше, чем просто мужская парикмахерская
     </div>
@@ -74,7 +77,7 @@
                 <div class="bonus">
                     <img src="images/food-and-restaurant.png" alt="">
                 </div>
-                <div class="bonus-text">
+                <div class="bonus-text text-dop">
                     Мы предложим вам чашечку кофе или чая
                 </div>
             </div>
@@ -118,18 +121,18 @@
 </div>
 
 <div class="insta">
-    <div class="parallax-window" data-parallax="scroll" data-image-src="images/5c4ef.png" style="height: 180px">
-        <div class="insta-container">
-
-            <div class="insta-text">
-                Следи за нами в <span>Instagram</span>, чтобы быть в курсе всех акций!
-            </div>
-            <button class="btn-sing-up up">Подписаться</button>
+    <div class="insta-container">
+        <div class="insta-text">
+            Следи за нами в <span>Instagram</span>, чтобы быть в курсе всех акций!
         </div>
+        <a href="https://www.instagram.com/?hl=ru">
+            <button class="btn-sing-up up">Подписаться</button>
+        </a>
     </div>
 </div>
 <div id="price">
     <img id="scissors" src="images/scissors.png" alt="">
+    <div id="border-slick-two"></div>
     <div id="price-text">
         Прайс на наши услуги
     </div>
@@ -312,18 +315,16 @@
 </div>
 
 <div class="insta insta-bg">
-    <div class="parallax-window" data-parallax="scroll" data-image-src="images/5c4efb.png" style="height: 180px">
-        <div class="insta-container">
-            <div class="insta-text">
-                Вы у нас первый раз? Получите <span id="color-discount">скидку 15%</span>
-            </div>
-            <button class="btn-sing-up up pa open-modal">Получить скидку</button>
+    <div class="insta-container">
+        <div class="insta-text">
+            Вы у нас первый раз? Получите <span id="color-discount">скидку 15%</span>
         </div>
+        <button class="btn-sing-up up pa open-modal">Получить скидку</button>
     </div>
 </div>
+
 <div id="masters" class=" wow animate__pulse">
     <div id="border-slick"></div>
-
     <div id="block-text-next">
         <div id="reservation-content">
             <img id="data-close" src="images/close-data.png" alt="">
@@ -334,64 +335,64 @@
                 <form action="" id="reserve" method="post">
                     <div id="reserve-block">
                         <input type="text" name="name" id="name" placeholder="Ваше имя">
-
+                        <div id="error-name">Заполните имя</div>
                         <input type="text" name="phone" id="phone" placeholder="Ваш телефон">
-
+                        <div id="error-phone">Заполните телефон</div>
                     </div>
                     <div id="reserve-block-two">
                         <select class="reserve-input next" name="services" id="services"
                                 aria-label="Default select example">
-                            <option selected>Выберете услугу</option>
-                            <option value="1">Стрижка мужская</option>
-                            <option value="2">Стрижка удлиненная</option>
-                            <option value="3">Стрижка машинкой</option>
-                            <option value="4">Стрижка детская</option>
-                            <option value="5">Стрижка бороды</option>
-                            <option value="6">Классическое бритьё</option>
-                            <option value="7">Королевское бритьё</option>
-                            <option value="8">Отец + сын</option>
-                            <option value="9">Друг + друг</option>
-                            <option value="10">Стрижка + Бритьё</option>
-                            <option value="11">Укладка волос</option>
-                            <option value="12">Коррекция воском</option>
-                            <option value="13">Камуфляж седины</option>
-                            <option value="14">Бритьё головы</option>
+                            <option value='0'>Выберете услугу</option>
+                            <option value="male">Стрижка мужская</option>
+                            <option value="remote">Стрижка удлиненная</option>
+                            <option value="typewriter">Стрижка машинкой</option>
+                            <option value="children">Стрижка детская</option>
+                            <option value="beard">Стрижка бороды</option>
+                            <option value="classic-shaving">Классическое бритьё</option>
+                            <option value="king-shaving">Королевское бритьё</option>
+                            <option value="father">Отец + сын</option>
+                            <option value="friend">Друг + друг</option>
+                            <option value="haircut-shaving">Стрижка + Бритьё</option>
+                            <option value="stacking">Укладка волос</option>
+                            <option value="wax">Коррекция воском</option>
+                            <option value="camouflage">Камуфляж седины</option>
+                            <option value="shaving-head">Бритьё головы</option>
                         </select>
-
+                        <div id="error-services">Выберете услугу</div>
                         <select class="reserve-input next" name="master" id="master"
                                 aria-label="Default select example">
-                            <option selected>Выберете мастера</option>
-                            <option value="1">Алексей</option>
-                            <option value="2">Марат</option>
-                            <option value="3">Екатерина</option>
-                            <option value="4">Иван</option>
-                            <option value="5">Дмитрий</option>
-                            <option value="6">Николай</option>
-                            <option value="7">Евгений</option>
-                            <option value="8">Александр</option>
-                            <option value="9">Арсений</option>
+                            <option value="0">Выберете мастера</option>
+                            <option value="Aleksey">Алексей</option>
+                            <option value="Marat">Марат</option>
+                            <option value="Kat">Екатерина</option>
+                            <option value="Ivan">Иван</option>
+                            <option value="Dmitriy">Дмитрий</option>
+                            <option value="Nikolay">Николай</option>
+                            <option value="Evgeny">Евгений</option>
+                            <option value="Alex">Александр</option>
+                            <option value="Arseniy">Арсений</option>
                         </select>
-
+                        <div id="error-master">Выберете мастера</div>
                     </div>
                     <div id="reserve-block-next">
                         <input id="datepicker" id="date" placeholder="Введите дату">
-
+                        <div id="error-date">Введите дату</div>
                         <select class="reserve-input next" name="time" id="time-for"
                                 aria-label="Default select example">
-                            <option selected>Выберите время</option>
-                            <option value="1">10-00</option>
-                            <option value="2">11-00</option>
-                            <option value="3">12-00</option>
-                            <option value="4">13-00</option>
-                            <option value="5">14-00</option>
-                            <option value="6">15-00</option>
-                            <option value="7">16-00</option>
-                            <option value="8">17-00</option>
+                            <option value="0">Выберите время</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
                         </select>
-
+                        <div id="error-time">Введите время</div>
                     </div>
                 </form>
-                <p id="reserve-error">Заполните все поля</p>
+
                 <div id="reserve-button">
                     <button class="btn-sing-up reserve">Оформить заявку</button>
                 </div>
@@ -401,7 +402,7 @@
     <div id="block-text">
         <div id="thank">
             <div id="thank-title">
-                <img id="thank-close" src="images/close-data.png" alt="">
+                <img id="thank-close" onClick="window.location.reload()" src="images/close-data.png" alt="">
                 Спасибо что выбрали Strong Club!
             </div>
             <div id="thank-text">
@@ -517,7 +518,7 @@
     <div id="contacts-container">
         <div id="contacts-bloc">
             <div id="contacts-bloc-logo">
-                <a class="header-logo" href="#">Strong club Barbershop</a>
+                <img src="images/Strong-club-Barbershop.png" alt="">
             </div>
             <div id="contacts-container-bloc">
                 <div id="contacts-bloc-content">
@@ -532,9 +533,9 @@
                             Мы в социальных сетях:
                         </div>
                         <div id="icon">
-                            <img src="images/icons8-vkontakte-50.png" alt="">
-                            <img src="images/instagram.png" alt="">
-                            <img src="images/icons8-facebook-old-50.png" alt="">
+                            <a href="https://vk.com/"><img src="images/icons8-vkontakte-50.png" alt=""></a>
+                            <a href="https://www.instagram.com/?hl=ru"><img src="images/instagram.png" alt=""></a>
+                            <a href="https://ru-ru.facebook.com/"><img src="images/icons8-facebook-old-50.png" alt=""></a>
                         </div>
                     </div>
                     <div id="mail">
@@ -543,8 +544,8 @@
                     <div class="phone">+7 912 816-93-96</div>
                 </div>
                 <div id="cart">
-                        <iframe src="https://yandex.by/map-widget/v1/-/CCUaA2CX-C"
-                                 allowfullscreen="true" class="img-fluid"></iframe>
+                    <iframe src="https://yandex.by/map-widget/v1/-/CCUaA2CX-C"
+                            allowfullscreen="true" class="img-fluid"></iframe>
                 </div>
             </div>
         </div>

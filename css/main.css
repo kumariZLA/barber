@@ -39,7 +39,7 @@ body {
     align-items: center;
 }
 
-#header #header-menu-container a.active {
+#header #header-menu-container a.header-menu:hover {
     border-bottom: 1px solid rgb(174, 137, 89);
     padding-bottom: 5px;
 }
@@ -93,23 +93,15 @@ a.header-logo {
 
 #titles #titles-container #context {
     position: absolute;
-    font-size: 180px;
-    font-family: "Castellar", sans-serif;
-    color: rgba(174, 137, 89, 0.051);
-    line-height: 0.111;
-    left: 237px;
-    top: 100px;
+    left: 255px;
+    top: 23px;
     z-index: 1;
 }
 
 #titles #titles-container #context-next {
-    font-size: 180px;
-    font-family: "Castellar", sans-serif;
-    color: rgba(174, 137, 89, 0.051);
-    line-height: 0.111;
     position: absolute;
     z-index: 1;
-    bottom: 107px;
+    bottom: 50px;
     right: 15px;
 }
 
@@ -144,7 +136,7 @@ a.header-logo {
     font-size: 18px;
     font-family: "MullerBold", sans-serif;
     color: rgb(255, 255, 255);
-    padding: 23px 33px;
+    padding: 18px 33px;
     cursor: pointer
 }
 
@@ -176,6 +168,16 @@ a.header-logo {
     max-width: 1170px;
     margin: 0 auto;
     padding: 99px 0 100px 0;
+    position: relative;
+}
+
+#border-slick-one {
+    background-color: rgb(174, 137, 89);
+    right: 1px;
+    top: 108px;
+    width: 2px;
+    height: 734px;
+    position: absolute;
 }
 
 #description #description-text {
@@ -212,6 +214,7 @@ img.br:hover {
     font-family: "MullerRegular", sans-serif;
     color: rgb(255, 255, 255);
     margin-left: 20px;
+    margin-top: 5px;
 }
 
 #description #description-container #description-content .text {
@@ -230,7 +233,7 @@ img.br:hover {
     font-family: "MullerRegular", sans-serif;
     color: rgb(255, 255, 255);
     line-height: 1.313;
-    width: 472px;
+    max-width: 472px;
 }
 
 #description #description-container #denomination-content-next .tx {
@@ -244,10 +247,10 @@ img.br:hover {
 }
 
 .insta {
-
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
+    background-image: url("../images/5c4ef.png");
 }
 
 .insta .insta-container {
@@ -273,7 +276,7 @@ img.br:hover {
 }
 
 .insta .insta-container .up {
-    padding: 23px 60px;
+    padding: 18px 60px;
     margin-left: 263px;
 }
 
@@ -282,6 +285,15 @@ img.br:hover {
     margin: 0 auto;
     position: relative;
     padding: 100px 0;
+}
+
+#border-slick-two {
+    background-color: rgb(174, 137, 89);
+    left: 1px;
+    top: 108px;
+    width: 2px;
+    height: 734px;
+    position: absolute;
 }
 
 #price img#scissors {
@@ -299,7 +311,7 @@ img.br:hover {
     font-family: "LoraRegular", sans-serif;
     color: rgb(255, 255, 255);
     text-align: center;
-    margin-bottom: 59px;
+    margin-bottom: 54px;
 }
 
 #price .price-list {
@@ -309,7 +321,7 @@ img.br:hover {
 }
 
 #price .price-list-container {
-    margin-top: 41px;
+    margin-top: 36px;
 }
 
 #price #price-bloc {
@@ -318,7 +330,7 @@ img.br:hover {
 }
 
 #price #price-bloc #price-bloc-content-next .list {
-    margin-top: 50px;
+    margin-top: 38px;
 }
 
 #price .price-list-bloc {
@@ -345,7 +357,7 @@ img.br:hover {
     color: rgb(89, 85, 80);
     line-height: 1.429;
     width: 214px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 #price .price-list-container .con {
@@ -353,8 +365,9 @@ img.br:hover {
 }
 
 .insta-bg {
-    background: url("../images/bg_copy_one.png");
-
+    background: url("../images/bg_copy_one.png"),
+    url("../images/5c4efb.png");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -364,7 +377,7 @@ img.br:hover {
 }
 
 .insta .insta-container .pa {
-    padding: 23px 43px;
+    padding: 18px 43px;
 }
 
 #masters {
@@ -420,13 +433,13 @@ img.br:hover {
 }
 
 .slick-next {
-    top: 616px;
+    top: 556px;
     right: 278px;
 }
 
 .slick-prev {
     left: 270px;
-    top: 616px;
+    top: 556px;
 }
 
 .photo {
@@ -444,6 +457,7 @@ img.br:hover {
 
 .slick-slide {
     width: 292px;
+    height: 88%;
 }
 
 img.bg-color:hover {
@@ -453,15 +467,16 @@ img.bg-color:hover {
 .center .master .photo .bg-color {
     position: absolute;
     width: 318px;
-    height: 114px;
-    top: 326px;
-    margin-left: 8px;
+    height: 113px;
+    top: 267px;
+    margin-left: 30px;
     opacity: 65%;
 }
 
 .center .master .photo img.photo-min {
-    width: 95%;
+    max-width: 275px;
     margin: 0 auto;
+    max-height: 406px;
 }
 
 .master {
@@ -469,8 +484,9 @@ img.bg-color:hover {
 }
 
 .slick-current {
-    transform: scale(1.2);
+    transform: scale(1.7);
     transition: 1s;
+    height: 69px;
 }
 
 .slick-track {
@@ -480,12 +496,13 @@ img.bg-color:hover {
 .center .slick-track .slick-center {
     position: relative;
     z-index: 5555;
+    top: -16px;
 }
 
 .center .slick-track .slick-center img.bg-color {
-    margin-top: -18px;
-    width: 319px;
-    height: 132px;
+    margin-top: -90px;
+    width: 275px;
+    height: 96px;
     position: fixed;
 }
 
@@ -494,18 +511,23 @@ img.bg-color:hover {
 }
 
 .center .slick-track .slick-center .slick-name-barber {
-    margin-top: -98px;
+    margin-top: -181px;
+    font-size: 17px;
+    left: 12px;
 }
 
 .center .slick-track .slick-center .btn-slick {
-    margin-top: -96px;
+    margin-top: -180px;
     background-color: #ae8959;
+    font-size: 10px;
+    padding: 4px 28px;
+    left: 41px;
 }
 
 .master .slick-name-barber {
     position: absolute;
-    margin-left: 123px;
-    top: 418px;
+    margin-left: 128px;
+    top: 372px;
     font-size: 20px;
     font-family: "LoraRegular", sans-serif;
     color: rgb(255, 255, 255);
@@ -518,13 +540,13 @@ img.bg-color:hover {
     border-color: rgb(174, 137, 89);
     border-style: solid;
     position: absolute;
-    margin-left: 90px;
-    top: 452px;
-    font-size: 16px;
+    margin-left: 82px;
+    top: 411px;
+    font-size: 17px;
     font-family: "MullerBold", sans-serif;
     color: rgb(255, 255, 255);
     background: none;
-    padding: 15px 39px;
+    padding: 5px 39px;
     cursor: pointer;
 }
 
@@ -543,6 +565,10 @@ img.bg-color:hover {
     bottom: -60px;
     width: 41%;
     margin-left: 296px
+}
+
+li.slick-active {
+    transform: scale(1.2);
 }
 
 .slick-dots li {
@@ -594,11 +620,12 @@ img.bg-color:hover {
 
 #contacts #contacts-container #contacts-bloc #cart {
     margin-left: 43px;
-    margin-top: -110px;
+    margin-top: -58px;
 }
 
 #contacts #contacts-container #contacts-bloc #contacts-container-bloc #contacts-bloc-content {
     margin-left: 83px;
+    margin-top: -10px;
 }
 
 #contacts #contacts-container #contacts-bloc #contacts-container-bloc #contacts-bloc-content #site #site-container {
@@ -606,7 +633,7 @@ img.bg-color:hover {
     font-family: "MullerRegular", sans-serif;
     color: rgb(255, 255, 255);
     width: 184px;
-    margin-top: 40px;
+    margin-top: 35px;
     margin-left: -12px;
 }
 
@@ -629,13 +656,13 @@ img.bg-color:hover {
     font-family: "MullerRegular", sans-serif;
     color: rgb(255, 255, 255);
     width: 200px;
-    margin-top: 60px;
+    margin-top: 55px;
     margin-left: -22px;
     cursor: pointer;
 }
 
 #contacts #contacts-container #contacts-bloc #contacts-container-bloc #contacts-bloc-content .phone {
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 5px;
 }
 
@@ -779,7 +806,7 @@ option {
 }
 
 #reserve-button .btn-sing-up {
-    padding: 25px 40px;
+    padding: 16px 40px;
     margin-top: 22px;
     margin-left: 291px;
 }
@@ -795,19 +822,28 @@ select.next {
 }
 
 #block-text {
-    position: absolute;
-    top: 417px;
-    left: 83px;
-    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    align-items: center;
     display: none;
+    justify-content: center;
 }
 
 #block-text-next {
-    position: absolute;
-    top: 417px;
-    left: 83px;
-    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999;
     display: none;
+    align-items: center;
 }
 
 #reserve-error {
@@ -817,6 +853,54 @@ select.next {
     font-family: "MullerRegular", sans-serif;
     color: red;
     display: none;
+}
+#error-name{
+    display: none;
+    text-align: center;
+    margin-top: -25px;
+    font-size: 18px;
+    font-family: "MullerRegular", sans-serif;
+    color: red;
+}
+#error-phone{
+    display: none;
+    text-align: center;
+    margin-top: -25px;
+    font-size: 18px;
+    font-family: "MullerRegular", sans-serif;
+    color: red;
+}
+#error-date{
+    display: none;
+    text-align: center;
+    margin-top: -25px;
+    font-size: 18px;
+    font-family: "MullerRegular", sans-serif;
+    color: red;
+}
+#error-services{
+    display: none;
+    text-align: center;
+    margin-top: -25px;
+    font-size: 18px;
+    font-family: "MullerRegular", sans-serif;
+    color: red;
+}
+#error-master{
+    display: none;
+    text-align: center;
+    margin-top: -25px;
+    font-size: 18px;
+    font-family: "MullerRegular", sans-serif;
+    color: red;
+}
+#error-time{
+    display: none;
+    text-align: center;
+    margin-top: -25px;
+    font-size: 18px;
+    font-family: "MullerRegular", sans-serif;
+    color: red;
 }
 
 #thank {
@@ -830,8 +914,8 @@ select.next {
 
 #thank-title img#thank-close {
     position: absolute;
-    top: 30px;
-    right: 30px;
+    bottom: 125px;
+    left: 594px;
     cursor: pointer;
 }
 
@@ -842,6 +926,7 @@ select.next {
     text-align: center;
     width: 287px;
     margin: 0 auto;
+    position: relative;
 }
 
 #thank-text {
